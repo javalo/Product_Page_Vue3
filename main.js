@@ -4,7 +4,8 @@ const app = Vue.createApp({
     return {
         product : 'Socks',
         image: './assets/images/socks_green.jpg',
-        inventory: 11
+        inventory: 11,
+        details : ['50% cotton', '30% wool', '20% polyester']
     }
  }
 
