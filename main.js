@@ -3,6 +3,7 @@ const app = Vue.createApp({
         return {
             cart:0,
             product: 'Socks',
+            brand : 'Vue Master',
             image: './assets/images/socks_blue.jpg',
             inStock: false,
             details: ['50% cotton', '30% wool', '20% polyester'],
@@ -22,5 +23,9 @@ const app = Vue.createApp({
             this.image = variantImage
         }
     },
-
+computed: {
+    title (){
+        return this.brand+' '+this.product
+    }
+}
 })
