@@ -51,7 +51,7 @@ app.component('product-display',{
           { id: 2235, color: 'blue', 
           image: './assets/images/socks_blue.jpg', quantity: 0 },
         ],
-        
+        reviews:[]
     }
 }
 ,
@@ -63,6 +63,9 @@ methods:{
     updateVariant(index){
         this.selectedVariant = index
         console.log(index)
+    },
+    addReview(review){
+        this.reviews.push(review)
     }
 },
 computed: {
